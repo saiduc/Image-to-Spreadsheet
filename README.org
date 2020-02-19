@@ -1,0 +1,42 @@
+#+TITLE: Image to Spreadsheet Converter
+
+This script converts an image into a Microsoft Excel Spreadsheet, with
+conditional formatting such that each cell is a black & white pixel. The image
+is clear when the spreadsheet is zoomed out.
+
+The script itself is pretty simple, it just loads an image, gets black and white
+pixel values and then writes each pixel to a cell in Excel. The script also
+automatically applies conditional formatting so that if the cell contains 1, it
+is filled black, and if it contains 0 it is filled white.
+
+* Usage
+Just run the script with the image file specified in the "image" variable. The
+script should be run however you normally run python scripts: 
+``` 
+python create.py 
+``` 
+This will then generate a file called "image.xlsx" that you can open in
+Microsoft Excel.
+
+* Requirements
+- Python 3
+- Pillow
+- Numpy
+- Pandas
+- XlsxWriter
+
+* Some Notes on What I Learned
+This was a really basic script and there really wasn't much I learned besides
+how to write to an Excel file using Pandas. The XlsxWriter library is quite
+feature rich, and can be used for all kinds of excel-related functions, like
+plotting graphs and working with formulas. This may be quite useful for data
+scientists who cannot, for whatever reason, rely solely on Python libraries, and
+must use Excel.
+
+* License
+This project is licensed under the terms of the MIT license. Do whatever you want with it!
+
+* Acknowledgements
+I initially got this idea from one of Matt Parker's videos. He actually doesn't
+use black & white, and instead has colour. This script could quite easily be
+extended to that, if the reader would like to do that.
