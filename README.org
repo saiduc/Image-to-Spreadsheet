@@ -1,13 +1,13 @@
 #+TITLE: Image to Spreadsheet Converter
 
 This script converts an image into a Microsoft Excel Spreadsheet, with
-conditional formatting such that each cell is a black & white pixel. The image
+conditional formatting such that each cell is a dark & light pixel. The image
 is clear when the spreadsheet is zoomed out.
 
 The script itself is pretty simple, it just loads an image, gets black and white
 pixel values and then writes each pixel to a cell in Excel. The script also
 automatically applies conditional formatting so that if the cell contains 1, it
-is filled black, and if it contains 0 it is filled white.
+is filled dark, and if it contains 0 it is filled light.
 
 * Usage
 Just run the script with the image file specified in the "image" variable. The
@@ -17,6 +17,9 @@ python create.py
 ``` 
 This will then generate a file called "image.xlsx" that you can open in
 Microsoft Excel.
+
+* Screenshots
+[[file:screenshot.png][Screenshot of outputted spreadsheet]]
 
 * Requirements
 - Python 3
