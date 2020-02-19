@@ -12,14 +12,16 @@ is filled dark, and if it contains 0 it is filled light.
 * Usage
 Just run the script with the image file specified in the "image" variable. The
 script should be run however you normally run python scripts: 
-``` 
+#+begin_src bash
 python create.py 
-``` 
+#+end_src
+
 This will then generate a file called "image.xlsx" that you can open in
 Microsoft Excel.
 
 * Screenshots
-[[file:screenshot.png][Screenshot of outputted spreadsheet]]
+
+#+html: <img width="300" alt="game_screenshot" src="https://user-images.githubusercontent.com/40459599/74887295-786ce100-5372-11ea-8d63-f3894bba2ddf.png">
 
 * Requirements
 - Python 3
