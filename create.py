@@ -9,5 +9,5 @@ image_data = np.array(im)
 x, y = image_data.shape
 
 df = pd.DataFrame(data=image_data, index=None)
-writer = pd.ExcelWriter('image.xlsx', engine='xlsxwriter')
-df.to_excel(writer, sheet_name='Sheet1')
+with pd.ExcelWriter("image.xlsx") as writer:
+    df.to_excel(writer)
